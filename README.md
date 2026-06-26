@@ -101,7 +101,7 @@ Then open Power BI Desktop, load the four CSVs from `powerbi/`, and follow [`POW
 
 16 SKUs across 3 categories (Oral / Personal / Home Care), 5 regions, 104 weeks (2023–2024), ~8,300 SKU-region-week rows, ~₹2.76B simulated revenue. Ground truth includes per-SKU elasticities, category seasonality, 3 cannibalization pairs, and 2 intentionally loss-making promotions alongside profitable ones.
 
-## Methodology (short version)
+## Methodology
 
 Demand follows a log-linear model: `log(units) = elasticity·log(price) + seasonality + trend + region + promo_lift + cannibalization + noise`. Price varies independently of promotions (so elasticity isn't confounded with promo lift), and the ground truth for each promo's effect comes from re-running the same noise draws with that promo switched off — an exact counterfactual, not an approximation.
 
