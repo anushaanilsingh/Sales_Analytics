@@ -12,7 +12,7 @@ true parameters — they recover them from the observed sales alone.
 
 ---
 
-## Why simulated data (read this first)
+## Why simulated data 
 
 Real promotional data never comes with an answer key. If you fit an elasticity of −1.4 on a
 real dataset, you have no way to prove it's right — only that it's plausible. That makes it
@@ -143,7 +143,7 @@ Forecasts convert to `suggested_order_qty = forecast + 1.65σ` (≈95% service l
 
 ---
 
-## Model & method choices (and why they're defensible)
+## Model & method choices
 
 - **Log-log OLS for elasticity** over fancier causal ML: every coefficient is directly
   interpretable as an elasticity, the identifying assumption (price varies for reasons unrelated
@@ -159,7 +159,7 @@ Forecasts convert to `suggested_order_qty = forecast + 1.65σ` (≈95% service l
 
 ---
 
-## Honest limitations
+## Limitations
 
 - **The data is simulated.** Recovery accuracy on real data will be lower — real demand has
   pantry-loading / forward-buying, competitor actions, stockouts, and structural breaks that this
@@ -176,35 +176,3 @@ Forecasts convert to `suggested_order_qty = forecast + 1.65σ` (≈95% service l
 - **Forecasts assume promo calendar and prices are known** for the forecast horizon (true for
   *planned* promotions, which is the intended use — answering "given next quarter's promo plan,
   what should we order?").
-
----
-
-## Resume bullet (3–4 sentences)
-
-> Built an end-to-end FMCG sales & promotion analytics pipeline in Python (16 SKUs × 5 regions ×
-> 2 years) that estimates price elasticity, promotion uplift, cannibalization, and net promo
-> profitability, surfaced through a Power BI RGM dashboard. Validated every model against a
-> simulated ground truth: recovered true elasticities within **6.6% MAPE** (vs 55% for naive
-> analysis), detected all cannibalization pairs within **1.6 pp**, and correctly flagged
-> **8 of 9** promotions as profit-positive or -negative — including two deliberately
-> loss-making promos. Added demand forecasting (LightGBM vs Holt-Winters) cutting holdout MAPE
-> from **13.4% to 9.6%** and converting forecasts into service-level-based suggested order
-> quantities.
-
----
-
-## 30-second interview pitch ("walk me through this")
-
-> "FMCG promotions burn margin when they're priced or targeted wrong, so I built a pipeline that
-> measures whether a promo actually pays. The hard part with promo analytics is you can never
-> prove your numbers are right on real data — so I simulated two years of sales from a demand
-> model with *known* elasticities and promo effects, hid those truths, and made the models
-> recover them. They recovered elasticity within about 7%, where a naive analysis was off by 55%
-> and even got the sign wrong on staples. The pipeline correctly flagged eight of nine promos as
-> winners or losers — including the two I'd deliberately built to lose money — and caught all the
-> cannibalization between premium and regular SKUs to within two points. On top of that I
-> forecast demand with LightGBM, beating the seasonal baseline by about 30% on MAPE, and turned
-> that into suggested order quantities at a 95% service level. The whole thing feeds a Power BI
-> dashboard a category manager could use to decide which promotions to keep, cut, or re-price.
-> The point isn't the models — it's that I built a way to *know they were right* before trusting
-> them."
