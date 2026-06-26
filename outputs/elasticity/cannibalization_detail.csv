@@ -1,0 +1,4 @@
+aggressor,victim,cannib_pct_est,coef,p_value,cannibalization_flag,cannib_pct_true,cannib_abs_err_pp
+OC_TP_PREM,OC_TP_REG,16.78,-0.1837,0.0,True,18.0,1.2
+PC_SOAP_PREM,PC_SOAP_REG,22.89,-0.2599,0.0,True,25.0,2.1
+HC_DET_LIQ,HC_DET_PWD,16.36,-0.1787,0.0,True,15.0,1.4

@@ -1,0 +1,325 @@
+{
+  "_README": "HIDDEN ground-truth parameters. Analysis scripts must NOT read this file. Used only by validate step in elasticity.py.",
+  "seed": 20240615,
+  "n_weeks": 104,
+  "start_date": "2023-01-02",
+  "regions": {
+    "North": {
+      "region_demand_mult": 1.15,
+      "region_price_mult": 1.02
+    },
+    "South": {
+      "region_demand_mult": 1.05,
+      "region_price_mult": 0.98
+    },
+    "West": {
+      "region_demand_mult": 1.2,
+      "region_price_mult": 1.03
+    },
+    "East": {
+      "region_demand_mult": 0.85,
+      "region_price_mult": 0.97
+    },
+    "Central": {
+      "region_demand_mult": 0.95,
+      "region_price_mult": 1.0
+    }
+  },
+  "seasonality": {
+    "Oral Care": {
+      "1": 1.05,
+      "2": 1.02,
+      "3": 1.0,
+      "4": 0.99,
+      "5": 0.98,
+      "6": 0.98,
+      "7": 0.99,
+      "8": 1.0,
+      "9": 1.01,
+      "10": 1.04,
+      "11": 1.06,
+      "12": 1.05
+    },
+    "Personal Care": {
+      "1": 0.95,
+      "2": 0.96,
+      "3": 1.0,
+      "4": 1.12,
+      "5": 1.2,
+      "6": 1.18,
+      "7": 1.02,
+      "8": 1.0,
+      "9": 1.05,
+      "10": 1.3,
+      "11": 1.28,
+      "12": 1.1
+    },
+    "Home Care": {
+      "1": 0.98,
+      "2": 0.97,
+      "3": 1.02,
+      "4": 1.1,
+      "5": 1.14,
+      "6": 1.08,
+      "7": 0.98,
+      "8": 0.97,
+      "9": 1.18,
+      "10": 1.25,
+      "11": 1.06,
+      "12": 1.0
+    }
+  },
+  "price_noise_sd": 0.04,
+  "skus": {
+    "OC_TP_REG": {
+      "category": "Oral Care",
+      "name": "Toothpaste Regular 100g",
+      "base_price": 55,
+      "unit_cost": 33,
+      "elasticity_true": -0.85,
+      "trend_true": 0.1,
+      "noise_sd": 0.08
+    },
+    "OC_TP_PREM": {
+      "category": "Oral Care",
+      "name": "Toothpaste Whitening 100g",
+      "base_price": 110,
+      "unit_cost": 55,
+      "elasticity_true": -1.45,
+      "trend_true": 0.22,
+      "noise_sd": 0.1
+    },
+    "OC_BRUSH": {
+      "category": "Oral Care",
+      "name": "Toothbrush MediumPk2",
+      "base_price": 80,
+      "unit_cost": 38,
+      "elasticity_true": -1.1,
+      "trend_true": 0.05,
+      "noise_sd": 0.09
+    },
+    "OC_MOUTH": {
+      "category": "Oral Care",
+      "name": "Mouthwash 250ml",
+      "base_price": 165,
+      "unit_cost": 92,
+      "elasticity_true": -1.3,
+      "trend_true": 0.15,
+      "noise_sd": 0.11
+    },
+    "OC_TP_KIDS": {
+      "category": "Oral Care",
+      "name": "Toothpaste Kids 80g",
+      "base_price": 70,
+      "unit_cost": 40,
+      "elasticity_true": -1.2,
+      "trend_true": 0.18,
+      "noise_sd": 0.1
+    },
+    "PC_SOAP_REG": {
+      "category": "Personal Care",
+      "name": "Bath Soap Regular Pk4",
+      "base_price": 120,
+      "unit_cost": 70,
+      "elasticity_true": -1.7,
+      "trend_true": 0.08,
+      "noise_sd": 0.1
+    },
+    "PC_SOAP_PREM": {
+      "category": "Personal Care",
+      "name": "Bath Soap Luxury Pk3",
+      "base_price": 210,
+      "unit_cost": 105,
+      "elasticity_true": -2.4,
+      "trend_true": 0.2,
+      "noise_sd": 0.12
+    },
+    "PC_SHAMP": {
+      "category": "Personal Care",
+      "name": "Shampoo 340ml",
+      "base_price": 230,
+      "unit_cost": 130,
+      "elasticity_true": -1.95,
+      "trend_true": 0.12,
+      "noise_sd": 0.11
+    },
+    "PC_BODYWASH": {
+      "category": "Personal Care",
+      "name": "Body Wash 250ml",
+      "base_price": 199,
+      "unit_cost": 120,
+      "elasticity_true": -2.2,
+      "trend_true": 0.28,
+      "noise_sd": 0.13
+    },
+    "PC_DEO": {
+      "category": "Personal Care",
+      "name": "Deodorant 150ml",
+      "base_price": 250,
+      "unit_cost": 150,
+      "elasticity_true": -2.05,
+      "trend_true": 0.1,
+      "noise_sd": 0.12
+    },
+    "PC_LOTION": {
+      "category": "Personal Care",
+      "name": "Body Lotion 200ml",
+      "base_price": 180,
+      "unit_cost": 100,
+      "elasticity_true": -1.85,
+      "trend_true": 0.16,
+      "noise_sd": 0.11
+    },
+    "HC_DISH": {
+      "category": "Home Care",
+      "name": "Dishwash Liquid 750ml",
+      "base_price": 145,
+      "unit_cost": 88,
+      "elasticity_true": -1.55,
+      "trend_true": 0.14,
+      "noise_sd": 0.1
+    },
+    "HC_FLOOR": {
+      "category": "Home Care",
+      "name": "Floor Cleaner 1L",
+      "base_price": 175,
+      "unit_cost": 100,
+      "elasticity_true": -1.4,
+      "trend_true": 0.09,
+      "noise_sd": 0.1
+    },
+    "HC_DET_PWD": {
+      "category": "Home Care",
+      "name": "Detergent Powder 1kg",
+      "base_price": 130,
+      "unit_cost": 95,
+      "elasticity_true": -1.05,
+      "trend_true": 0.04,
+      "noise_sd": 0.09
+    },
+    "HC_DET_LIQ": {
+      "category": "Home Care",
+      "name": "Detergent Liquid 1L",
+      "base_price": 240,
+      "unit_cost": 140,
+      "elasticity_true": -2.1,
+      "trend_true": 0.3,
+      "noise_sd": 0.13
+    },
+    "HC_TOILET": {
+      "category": "Home Care",
+      "name": "Toilet Cleaner 500ml",
+      "base_price": 95,
+      "unit_cost": 58,
+      "elasticity_true": -1.25,
+      "trend_true": 0.07,
+      "noise_sd": 0.1
+    }
+  },
+  "promo_effects_true": {
+    "OC_TP_PREM": {
+      "discount_depth": 0.25,
+      "promo_lift_param": 0.35,
+      "label_design": "good",
+      "true_uplift_pct": 115.36,
+      "true_incremental_units": 111084,
+      "true_incremental_margin": 422281.0,
+      "true_net_profitable": true
+    },
+    "PC_SOAP_PREM": {
+      "discount_depth": 0.3,
+      "promo_lift_param": 0.45,
+      "label_design": "good",
+      "true_uplift_pct": 269.14,
+      "true_incremental_units": 215714,
+      "true_incremental_margin": 3640273.0,
+      "true_net_profitable": true
+    },
+    "HC_DET_LIQ": {
+      "discount_depth": 0.28,
+      "promo_lift_param": 0.4,
+      "label_design": "good",
+      "true_uplift_pct": 197.38,
+      "true_incremental_units": 119215,
+      "true_incremental_margin": -20167.0,
+      "true_net_profitable": false
+    },
+    "HC_DET_PWD": {
+      "discount_depth": 0.32,
+      "promo_lift_param": 0.15,
+      "label_design": "bad",
+      "true_uplift_pct": 74.19,
+      "true_incremental_units": 100770,
+      "true_incremental_margin": -6288335.0,
+      "true_net_profitable": false
+    },
+    "PC_SOAP_REG": {
+      "discount_depth": 0.35,
+      "promo_lift_param": 0.2,
+      "label_design": "bad",
+      "true_uplift_pct": 154.04,
+      "true_incremental_units": 167794,
+      "true_incremental_margin": -3224938.0,
+      "true_net_profitable": false
+    },
+    "PC_SHAMP": {
+      "discount_depth": 0.2,
+      "promo_lift_param": 0.5,
+      "label_design": "good",
+      "true_uplift_pct": 154.76,
+      "true_incremental_units": 128773,
+      "true_incremental_margin": 3009966.0,
+      "true_net_profitable": true
+    },
+    "HC_DISH": {
+      "discount_depth": 0.18,
+      "promo_lift_param": 0.42,
+      "label_design": "good",
+      "true_uplift_pct": 107.01,
+      "true_incremental_units": 96119,
+      "true_incremental_margin": 589813.0,
+      "true_net_profitable": true
+    },
+    "OC_MOUTH": {
+      "discount_depth": 0.22,
+      "promo_lift_param": 0.3,
+      "label_design": "good",
+      "true_uplift_pct": 86.44,
+      "true_incremental_units": 23134,
+      "true_incremental_margin": -120083.0,
+      "true_net_profitable": false
+    },
+    "PC_DEO": {
+      "discount_depth": 0.25,
+      "promo_lift_param": 0.38,
+      "label_design": "good",
+      "true_uplift_pct": 163.74,
+      "true_incremental_units": 80694,
+      "true_incremental_margin": -135560.0,
+      "true_net_profitable": false
+    }
+  },
+  "cannibalization_true": [
+    {
+      "aggressor": "OC_TP_PREM",
+      "victim": "OC_TP_REG",
+      "cannib_frac_param": 0.18,
+      "true_cannib_pct_realized": 18.0,
+      "true_units_lost": 37904
+    },
+    {
+      "aggressor": "PC_SOAP_PREM",
+      "victim": "PC_SOAP_REG",
+      "cannib_frac_param": 0.25,
+      "true_cannib_pct_realized": 25.0,
+      "true_units_lost": 36500
+    },
+    {
+      "aggressor": "HC_DET_LIQ",
+      "victim": "HC_DET_PWD",
+      "cannib_frac_param": 0.15,
+      "true_cannib_pct_realized": 15.0,
+      "true_units_lost": 19459
+    }
+  ]
+}

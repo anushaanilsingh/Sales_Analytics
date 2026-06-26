@@ -1,0 +1,17 @@
+sku,name,category,list_price,unit_cost,gross_margin_pct
+OC_TP_REG,Toothpaste Regular 100g,Oral Care,55,33,0.4
+OC_TP_PREM,Toothpaste Whitening 100g,Oral Care,110,55,0.5
+OC_BRUSH,Toothbrush MediumPk2,Oral Care,80,38,0.525
+OC_MOUTH,Mouthwash 250ml,Oral Care,165,92,0.442
+OC_TP_KIDS,Toothpaste Kids 80g,Oral Care,70,40,0.429
+PC_SOAP_REG,Bath Soap Regular Pk4,Personal Care,120,70,0.417
+PC_SOAP_PREM,Bath Soap Luxury Pk3,Personal Care,210,105,0.5
+PC_SHAMP,Shampoo 340ml,Personal Care,230,130,0.435
+PC_BODYWASH,Body Wash 250ml,Personal Care,199,120,0.397
+PC_DEO,Deodorant 150ml,Personal Care,250,150,0.4
+PC_LOTION,Body Lotion 200ml,Personal Care,180,100,0.444
+HC_DISH,Dishwash Liquid 750ml,Home Care,145,88,0.393
+HC_FLOOR,Floor Cleaner 1L,Home Care,175,100,0.429
+HC_DET_PWD,Detergent Powder 1kg,Home Care,130,95,0.269
+HC_DET_LIQ,Detergent Liquid 1L,Home Care,240,140,0.417
+HC_TOILET,Toilet Cleaner 500ml,Home Care,95,58,0.389
