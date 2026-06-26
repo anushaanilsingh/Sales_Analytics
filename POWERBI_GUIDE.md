@@ -142,5 +142,3 @@ This is the differentiator page — lead your interview demo here.
   `FIRSTDATE`), so planners see the order list at a glance.
 - **SKU slicer** + a tooltip showing per-SKU MAPE.
 
-> Demo flow for the interview: Page 1 (the business), Page 2 (prove the model recovers
-> true effects and catches the bad promos), Page 3 (turn it into an order recommendation).
